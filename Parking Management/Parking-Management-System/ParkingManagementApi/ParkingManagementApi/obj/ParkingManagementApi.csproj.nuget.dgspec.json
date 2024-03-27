@@ -1,0 +1,414 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\ParkingManagementApi\\ParkingManagementApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj",
+        "projectName": "Parking.Management.Domain",
+        "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj",
+        "packagesPath": "C:\\Users\\jitendra.patil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jitendra.patil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/music-edi-nuget": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/v3/mastery-nuget-read": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Endpoint\\Parking.Management.Endpoint.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Endpoint\\Parking.Management.Endpoint.csproj",
+        "projectName": "Parking.Management.Endpoint",
+        "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Endpoint\\Parking.Management.Endpoint.csproj",
+        "packagesPath": "C:\\Users\\jitendra.patil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Endpoint\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jitendra.patil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/music-edi-nuget": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/v3/mastery-nuget-read": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj": {
+                "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj"
+              },
+              "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj": {
+                "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.WindowsServices": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "NServiceBus.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj",
+        "projectName": "Parking.Management.Engine",
+        "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj",
+        "packagesPath": "C:\\Users\\jitendra.patil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jitendra.patil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/music-edi-nuget": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/v3/mastery-nuget-read": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Infrastructure\\Parking.Management.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Infrastructure\\Parking.Management.Infrastructure.csproj",
+        "projectName": "Parking.Management.Infrastructure",
+        "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Infrastructure\\Parking.Management.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\jitendra.patil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jitendra.patil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/music-edi-nuget": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/v3/mastery-nuget-read": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj": {
+                "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj"
+              },
+              "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Endpoint\\Parking.Management.Endpoint.csproj": {
+                "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Endpoint\\Parking.Management.Endpoint.csproj"
+              },
+              "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj": {
+                "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\ParkingManagementApi\\ParkingManagementApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\ParkingManagementApi\\ParkingManagementApi.csproj",
+        "projectName": "ParkingManagementApi",
+        "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\ParkingManagementApi\\ParkingManagementApi.csproj",
+        "packagesPath": "C:\\Users\\jitendra.patil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\ParkingManagementApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jitendra.patil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/music-edi-nuget": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/v3/mastery-nuget-read": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj": {
+                "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj"
+              },
+              "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj": {
+                "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj"
+              },
+              "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Infrastructure\\Parking.Management.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Infrastructure\\Parking.Management.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

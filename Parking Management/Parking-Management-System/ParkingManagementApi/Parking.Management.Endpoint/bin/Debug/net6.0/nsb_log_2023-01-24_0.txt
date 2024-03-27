@@ -1,0 +1,4 @@
+﻿2023-01-24 15:38:21.848 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-24 15:38:22.096 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-24 15:38:22.102 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-24 15:38:22.107 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows

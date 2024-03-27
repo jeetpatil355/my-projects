@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>function demo</h1>
+
+    <script>
+      // empty function
+      function emptyFunction() {}
+
+      // function definition = function declaration + function body
+      // parameter less function
+      function function1() {
+        console.log('inside function1')
+      }
+
+      // function call or function invocation
+      // function1()
+
+      // void function2(int param) {...}
+
+      function function2(param) {
+        console.log(`inside function2`)
+        console.log(`parameter = ${param}, type = ${typeof param}`)
+      }
+
+      // param = number
+      // function2(100)
+
+      // param = string
+      // function2('test')
+
+      // param = boolean
+      // function2(true)
+
+      // param = object
+      // function2([10, 20, 30, 40, 50])
+
+      function function3(p1, p2, p3) {
+        const sum = p1 + p2 + p3
+        console.log(`sum = ${sum}`)
+      }
+
+      // testResult in this case is undefined
+      // const testResult = function3(10, 20, 40)
+      // console.log(`testResult = ${testResult}`)
+
+      // function3(10, 20, 30)
+      // function3('10', 20, 30)
+      // function3(10, '20', 30)
+      // function3(10, 20, '30')
+      // function3('10', '20', '30')
+
+      // returning function
+      function add(p1, p2) {
+        return p1 + p2
+      }
+
+      // call the function and capture the return value in result
+      // const result = add(10, 20)
+      // console.log(`result = ${result}`)
+
+      // const result2 = add(10, '20')
+      // console.log(`result2 = ${result2}`)
+
+      function function4(p1, p2) {
+        console.log(`inside function4`)
+        console.log(`p1 = ${p1}, p2 = ${p2}`)
+        console.log(`${p1} / ${p2} = ${p1 / p2}`)
+      }
+
+      // p1 = 10, p2 = 20
+      // function4(10, 0)
+
+      // p1 = 10, p2 = undefined
+      // function4(10)
+
+      // p1 = undefined, p2 = undefined
+      // function4()
+
+      function function5() {
+        console.log(`inside function5`)
+        // console.log(`arguments = `, arguments)
+        let total = 0
+        for (const value of arguments) {
+          total += value
+        }
+        console.log(`addition = ${total}`)
+      }
+
+      // function5(10)
+      // function5(10, 20)
+      // function5(10, 20, 30)
+      // function5(10, 20, 30, 40)
+      // function5(10, 20, 30, 40, 50)
+      // function5(10, 20, 30, 40, 50, 60)
+      // function5(10, 20, 30, 40, 50, 60, 70)
+      // function5(10, 20, 30, 40, 50, 60, 70, 80)
+      // function5(10, 20, 30, 40, 50, 60, 70, 80, 90)
+      // function5(10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+
+      // r has a default value
+      // - if third parameter is passed the argument will be considered as value of r
+      // - if third parameter is not passed, then r will get value as 8.5
+      function calculateSimpleInterest(p, n, r = 8.5) {
+        console.log(`rate of interest = ${r}`)
+        const interest = (p * n * r) / 100
+        console.log(`simple interest = ${interest}`)
+      }
+
+      // calculateSimpleInterest(100000, 10)
+      // calculateSimpleInterest(150000, 6, 11.2)
+
+      // create a function to calculate compound interest
+      // create a function to convert a celsius value to fahrenheit
+    </script>
+  </body>
+</html>

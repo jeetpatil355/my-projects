@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page2</title>
+  </head>
+  <body>
+    <h1>Variables (Mutable) Demo</h1>
+    <script>
+      // declare a variable
+      // data type = number
+      let num = 100
+      // console.log(num)
+
+      // type casting the number data type to string
+      // console.log('value of num = ' + num)
+
+      // string interpolation
+      // - adding variable value inside a string
+      // console.log(`value of num = ${num}`)
+
+      // the num will use its own data type
+      // console.log('value of num = ', num)
+
+      // print the data type of num
+      // console.log(`type of num = ${typeof num}`)
+
+      console.log(`num = ${num}, type = ${typeof num}`)
+
+      // data type - number
+      let salary = 10.5
+      console.log(`salary = ${salary}, type = ${typeof salary}`)
+
+      // salary = 15.5
+
+      // the updated value is 15.5
+      // console.log(`salary = ${salary}, type = ${typeof salary}`)
+
+      // data type - string
+      let firstName = 'steve'
+      console.log(`firstName = ${firstName}, type = ${typeof firstName}`)
+
+      // data type - string
+      // let lastName = "jobs"
+      let lastName = 'jobs'
+      console.log(`lastName = ${lastName}, type = ${typeof lastName}`)
+
+      // data type - string
+      let address = `
+        h-105, xyz society,
+        pqr city,
+        abc state, 12345
+      `
+      console.log(`address = ${address}, type = ${typeof address}`)
+
+      // data type - boolean
+      let canVote = true
+      console.log(`canVote = ${canVote}, type = ${typeof canVote}`)
+
+      // data type - undefined
+      let myVar
+      console.log(`myVar = ${myVar}, type = ${typeof myVar}`)
+
+      // data type - undefined
+      let myVar2 = undefined
+      console.log(`myVar2 = ${myVar2}, type = ${typeof myVar2}`)
+
+      // data type - object
+      let myVar3 = null
+      console.log(`myVar3 = ${myVar3}, type = ${typeof myVar3}`)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display</title>
+    <style>
+      div {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+        margin: 10px;
+      }
+
+      .type1 {
+        /* width and height will be ignored */
+        display: inline;
+      }
+
+      .type2 {
+        display: inline-block;
+      }
+
+      button {
+        margin: 10px;
+        display: block;
+        width: 50px;
+        height: 50px;
+      }
+
+      .type3 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display Property Demo</h1>
+
+    <div class="type1">1</div>
+    <div class="type1">2</div>
+    <div class="type1">3</div>
+    <div class="type1">4</div>
+    <div class="type1">5</div>
+
+    <hr />
+
+    <div class="type2">1</div>
+    <div class="type2">2</div>
+    <div class="type2">3</div>
+    <div class="type2">4</div>
+    <div class="type2">5</div>
+
+    <hr />
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+
+    <hr />
+
+    <div class="type3">1</div>
+    <div class="type3">2</div>
+    <div class="type3">3</div>
+  </body>
+</html>

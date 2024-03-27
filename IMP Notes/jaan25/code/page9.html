@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shadow</title>
+
+    <style>
+      div {
+        font-size: 50px;
+        font-weight: bold;
+        text-shadow: 3px 3px 5px #b3b2b2;
+      }
+
+      div.type1 {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px 1px #616161;
+      }
+
+      div.type2 {
+        margin-top: 30px;
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: inset 5px 5px 5px rgb(179, 178, 178);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shadow Demo</h1>
+
+    <h2>Text Shadow</h2>
+
+    <div>This is a division having shadow</div>
+
+    <h2>Box Shadow</h2>
+
+    <div class="type1"></div>
+    <div class="type2"></div>
+  </body>
+</html>

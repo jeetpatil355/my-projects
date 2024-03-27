@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page5</title>
+  </head>
+  <body>
+    <h1>Map + Filter Demo</h1>
+    <script>
+      function function1() {
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // get square of even numbers
+        console.log(
+          numbers
+            .filter((value) => {
+              return value % 2 == 0
+            })
+            .map((value) => {
+              return value ** 2
+            })
+        )
+
+        // get cube of odd numbers
+        console.log(
+          numbers.filter((value) => value % 2 != 0).map((value) => value ** 3)
+        )
+      }
+
+      // function1()
+
+      function function2() {
+        // array of objects json notation
+        const persons = [
+          { name: 'person1', address: 'pune', phone: '+91324322', age: 10 },
+          { name: 'person2', address: 'mumbai', phone: '+91324323', age: 21 },
+          { name: 'person3', address: 'satara', phone: '+91324324', age: 12 },
+          { name: 'person4', address: 'karad', phone: '+91324325', age: 24 },
+          { name: 'person5', address: 'pune', phone: '+91324326', age: 19 },
+          { name: 'person6', address: 'pune', phone: '+91324327', age: 40 },
+        ]
+
+        // get the name and age of person who live in pune
+        console.log(
+          persons
+            .filter((person) => person.address == 'pune')
+            .map((person) => {
+              return { name: person.name, age: person.age }
+            })
+        )
+      }
+
+      // function2()
+
+      function function3() {
+        // array of 5 mobile with model, company, price and configuration (cpu, gpu) properties
+        const mobiles = [
+          {
+            model: 'iPhone 13 pro max',
+            company: 'Apple',
+            price: 206000,
+            configuration: { cpu: 'A14 Bionic', gpu: 'Apple GPU' },
+          },
+          {
+            model: 'Galaxy S23',
+            company: 'Samsung',
+            price: 90000,
+            configuration: { cpu: 'Exynos', gpu: 'Mali' },
+          },
+          {
+            model: 'Note 5',
+            company: 'Xiomi',
+            price: 20000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Adreno' },
+          },
+          {
+            model: 'One Plus 8',
+            company: 'One Plus',
+            price: 60000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Mali' },
+          },
+          {
+            model: 'Z40',
+            company: 'BlackBerry',
+            price: 40000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Adreno' },
+          },
+        ]
+
+        // find the model and company of affordable phones
+        console.log(
+          mobiles
+            .filter((mobile) => mobile.price <= 50000)
+            .map((mobile) => {
+              return { model: mobile.model, company: mobile.company }
+            })
+        )
+      }
+
+      function3()
+    </script>
+  </body>
+</html>

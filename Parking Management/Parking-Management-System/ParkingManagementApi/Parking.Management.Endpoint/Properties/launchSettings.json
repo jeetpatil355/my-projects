@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Parking.Management.Endpoint": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55694;http://localhost:55697"
+    }
+  }
+}

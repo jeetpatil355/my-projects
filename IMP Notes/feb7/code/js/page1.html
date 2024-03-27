@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Promise Demo</h1>
+
+    <script>
+      function function1() {
+        // create an object of Promise
+        return new Promise((resolve, reject) => {
+          // perform the operation
+
+          // resolving the promise
+          // console.log(`promise is about to get resolved`)
+          // resolve('done')
+
+          console.log(`promise is about to get rejected`)
+          reject('error')
+        })
+      }
+
+      // get the promise object
+      const result = function1()
+      result
+
+        // this block gets executed only when the promise gets resolved
+        .then((result) => {
+          console.log(`in then block : result = ${result}`)
+        })
+
+        // this block gets executed only when the promise gets rejected
+        .catch((error) => {
+          console.log(`in catch block : error = ${error}`)
+        })
+
+        // this block gets executed in both the scenarios
+        .finally(() => {
+          console.log(`finally block executed`)
+        })
+    </script>
+  </body>
+</html>

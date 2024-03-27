@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page1</title>
+  </head>
+  <body>
+    <h1>JSON Object demo</h1>
+
+    <script>
+      // object
+      const person = {
+        name: 'person',
+        address: {
+          city: 'pune',
+          state: 'MH',
+          country: 'india',
+          zipCode: 411041,
+        },
+        phone: '+91234233424',
+        languages: ['C', 'C++', 'JS', 'TS'],
+        canVote: true,
+      }
+      console.log(`person = `, person)
+      console.log(`type of person = ${typeof person}`)
+
+      // read value of a property
+      console.log(`name = ${person['name']}`)
+      console.log(`phone = ${person.phone}`)
+
+      // update the value of a property
+      person['name'] = 'new person'
+      person.phone = '+1343535'
+
+      console.log(`name = ${person.name}`)
+      console.log(`phone = ${person['phone']}`)
+
+      // get all the keys of an object using Object.keys()
+      console.log(Object.keys(person))
+
+      // get all the keys of an object using for..in loop
+      for (const key in person) {
+        console.log(`key = ${key}, value = ${person[key]}`)
+      }
+    </script>
+  </body>
+</html>

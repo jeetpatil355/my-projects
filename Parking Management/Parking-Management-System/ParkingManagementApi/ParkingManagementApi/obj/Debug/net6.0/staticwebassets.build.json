@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hjvUiXwIEfr28z7lkRXZKHoHsulKVcnsGBMH+GzflkM=",
+  "Source": "ParkingManagementApi",
+  "BasePath": "_content/ParkingManagementApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

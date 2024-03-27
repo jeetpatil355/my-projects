@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page5</title>
+  </head>
+  <body>
+    <h1>forEach, find and findIndex demo</h1>
+
+    <script>
+      function function1() {
+        const numbers = [10, 20, 30, 40, 50]
+
+        // using traditional for
+        for (let index = 0; index < numbers.length; index++) {
+          console.log(`value = ${numbers[index]}`)
+        }
+
+        console.log('-')
+
+        // using for..in
+        for (const index in numbers) {
+          console.log(`value = ${numbers[index]}`)
+        }
+
+        console.log('-')
+
+        // using for..of
+        for (const value of numbers) {
+          console.log(`value = ${value}`)
+        }
+
+        console.log('-')
+
+        // using forEach
+        numbers.forEach((value) => {
+          console.log(`value = ${value}`)
+        })
+      }
+
+      // function1()
+
+      function function2() {
+        const numbers = [10, 20, 30, 40, 50]
+
+        // get the index position of value 30
+        const index30 = numbers.findIndex((value) => {
+          return value == 30
+        })
+        console.log(`value 30 is present at ${index30} index`)
+
+        // get the index position of value 100
+        const index100 = numbers.findIndex((value) => {
+          return value == 100
+        })
+        console.log(`value 100 is present at ${index100} index`)
+      }
+
+      // function2()
+
+      function function3() {
+        const numbers = [10, 20, 30, 60, 40, 50]
+
+        // check if value 60 is present
+        const index60 = numbers.findIndex((value) => value == 60)
+        if (index60 == -1) {
+          console.log(`value 60 does not exist`)
+        } else {
+          console.log(`value 60 exists at ${index60} position`)
+        }
+
+        // check if value 60 is present
+        console.log(`value 60 exists: ${numbers.includes(60)}`)
+      }
+
+      // function3()
+
+      function function4() {
+        // array of objects json notation
+        const persons = [
+          { name: 'person1', address: 'pune', phone: '+91324322', age: 10 },
+          { name: 'person2', address: 'mumbai', phone: '+91324323', age: 21 },
+          { name: 'person3', address: 'satara', phone: '+91324324', age: 12 },
+          { name: 'person4', address: 'karad', phone: '+91324325', age: 24 },
+          { name: 'person5', address: 'pune', phone: '+91324326', age: 19 },
+          { name: 'person6', address: 'pune', phone: '+91324327', age: 40 },
+        ]
+
+        // check if there is a person who lives in Satara
+        // you can not use includes here as it works only with simple values
+        const indexSatara = persons.findIndex(
+          (person) => person.address == 'satara'
+        )
+        if (indexSatara == -1) {
+          console.log(`there is no person living in satara`)
+        } else {
+          console.log(
+            `there is a person living in satara at ${indexSatara} position`
+          )
+        }
+      }
+
+      function4()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj",
+        "projectName": "Parking.Management.Domain",
+        "projectPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\Parking.Management.Domain.csproj",
+        "packagesPath": "C:\\Users\\jitendra.patil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jitendra.patil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/music-edi-nuget": {},
+          "https://masterysys.jfrog.io/artifactory/api/nuget/v3/mastery-nuget-read": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

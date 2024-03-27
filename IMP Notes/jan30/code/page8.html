@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Map function demo</h1>
+
+    <script>
+      // create an array named squares and save square of every number from numbers
+
+      function function1() {
+        // array of numbers
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        const squares = []
+        for (const value of numbers) {
+          squares.push(value ** 2)
+        }
+
+        console.log(numbers)
+        console.log(squares)
+      }
+
+      // function1()
+
+      function function2() {
+        // array of numbers
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // transformation function
+        const square = (value) => {
+          return value ** 2
+        }
+
+        const squares = []
+        for (const value of numbers) {
+          squares.push(square(value))
+        }
+
+        console.log(numbers)
+        console.log(squares)
+      }
+
+      // function2()
+
+      function function3() {
+        // array of numbers
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // transformation function
+        const square = (value) => {
+          return value ** 2
+        }
+
+        // map will perform the iteration and transformation
+        const squares = numbers.map(square)
+        console.log(numbers)
+        console.log(squares)
+      }
+
+      // function3()
+
+      function function4() {
+        // array of numbers
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // map will perform the iteration and transformation
+        const squares = numbers.map((value) => {
+          console.log(`value = ${value}`)
+          return value ** 2
+        })
+        console.log(numbers)
+        console.log(squares)
+      }
+
+      // function4()
+
+      function function5() {
+        const temperaturesC = [33, 34, 32, 30, 29, 28]
+
+        // convert all the temperatures
+        // const temperaturesF = ..
+      }
+
+      function function6() {
+        // array of numbers
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // get cube of all the numbers
+        // const cubes = ..
+      }
+    </script>
+  </body>
+</html>

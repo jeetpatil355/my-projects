@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page7</title>
+  </head>
+  <body>
+    <h1>Array Demo</h1>
+
+    <script>
+      // array of numbers
+      const array = [10, 20, 30, 40, 50]
+      console.log(array)
+
+      // get the size of an array
+      console.log(`number of values in array = ${array.length}`)
+
+      // add a new item at the end of the collection
+      // append a value to the collection
+      array.push(60)
+      console.log(array)
+
+      // add a value in between
+      // add value 15 in between 10 and 20
+      // add a new value 15 on 1st position without deleting the existing value
+      array.splice(1, 0, 15)
+      console.log(array)
+
+      // insert value 25 between 20 and 30
+      array.splice(3, 0, 25)
+      console.log(array)
+
+      // insert value 35 between 30 and 40
+      array.splice(5, 0, 35)
+      console.log(array)
+
+      // remove the last value
+      array.pop()
+      console.log(array)
+
+      // delete in between value
+      // delete value 25
+      // delete one value from 3rd position
+      array.splice(3, 1)
+      console.log(array)
+
+      // delete 3 values (30, 35 and 40) from 3rd index
+      array.splice(3, 3)
+      console.log(array)
+
+      // replace the value 50 with 30
+      array.splice(3, 1, 30)
+      console.log(array)
+
+      console.log('-')
+
+      const numbers = [30, 20, 14, 21, 50, 11]
+      console.log(numbers)
+
+      // reverse the array
+      numbers.reverse()
+      console.log(numbers)
+
+      // sort the values in ascending order
+      // console.log(numbers.sort())
+      numbers.sort()
+      console.log(numbers)
+
+      // sort the values in descending order
+      numbers.sort().reverse()
+      console.log(numbers)
+    </script>
+  </body>
+</html>

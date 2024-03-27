@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page3</title>
+  </head>
+  <body>
+    <h1>HTML + JS</h1>
+
+    <div id="div1"></div>
+    <button onclick="onButtonClick()">add HTML elements</button>
+
+    <script>
+      function onButtonClick() {
+        const div = document.getElementById('div1')
+        div.innerHTML = `
+            <div>
+                <h3>header 3</h3>
+                <p>paragraph 1</p>
+                <p>paragraph 2</p>
+                <p>paragraph 3</p>
+                <button>click here</button>
+            </div>
+        `
+      }
+    </script>
+  </body>
+</html>

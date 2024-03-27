@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page2</title>
+  </head>
+  <body>
+    <h1>HTML + JS</h1>
+    <div id="div1">this is a div</div>
+    <button onclick="onButtonClick()">change message</button>
+    <script>
+      function onButtonClick() {
+        // DOM: document object model
+
+        // get an object of div having id as div1
+        const div = document.getElementById('div1')
+
+        // change the inner text
+        div.innerText = 'Text inside the div is changed'
+
+        // change the CSS properties
+        div.style.fontSize = '20px'
+        div.style.color = 'white'
+        div.style.backgroundColor = 'red'
+        div.style.fontFamily = 'Arial'
+      }
+    </script>
+  </body>
+</html>

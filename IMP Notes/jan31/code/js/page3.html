@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page3</title>
+  </head>
+  <body>
+    <h1>Filter demo</h1>
+
+    <script>
+      function function1() {
+        // array of numbers
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // find the even numbers from the collection
+        const evenNumbers = []
+        for (const number of numbers) {
+          if (number % 2 == 0) {
+            evenNumbers.push(number)
+          }
+        }
+        console.log(evenNumbers)
+      }
+
+      // function1()
+
+      function function2() {
+        // array of numbers
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        const evenNumbers = numbers.filter((value) => {
+          return value % 2 == 0
+        })
+        console.log(evenNumbers)
+
+        const oddNumbers = numbers.filter((value) => {
+          return value % 2 != 0
+        })
+        console.log(oddNumbers)
+      }
+
+      // function2()
+
+      function function3() {
+        const marks = [20, 25, 34, 38, 49, 37, 10, 3, 5, 18]
+
+        // marks >= 35
+        const passedStudents = marks.filter((mark) => {
+          return mark >= 35
+        })
+        const failedStudents = marks.filter((mark) => {
+          return mark < 35
+        })
+
+        console.log(passedStudents)
+        console.log(failedStudents)
+      }
+
+      // function3()
+
+      function function4() {
+        // array of objects json notation
+        const persons = [
+          { name: 'person1', address: 'pune', phone: '+91324322', age: 10 },
+          { name: 'person2', address: 'mumbai', phone: '+91324323', age: 21 },
+          { name: 'person3', address: 'satara', phone: '+91324324', age: 12 },
+          { name: 'person4', address: 'karad', phone: '+91324325', age: 24 },
+          { name: 'person5', address: 'pune', phone: '+91324326', age: 19 },
+          { name: 'person6', address: 'pune', phone: '+91324327', age: 40 },
+        ]
+
+        // find out the persons eligible for voting
+        const eligiblePersons = persons.filter((person) => {
+          return person.age >= 18
+        })
+        console.log(eligiblePersons)
+
+        // find out the persons from Pune
+        const personsFromPune = persons.filter((person) => {
+          return person.address == 'pune'
+        })
+        console.log(personsFromPune)
+      }
+
+      // function4()
+
+      function function5() {
+        // array of 5 mobile with model, company, price and configuration (cpu, gpu) properties
+        const mobiles = [
+          {
+            model: 'iPhone 13 pro max',
+            company: 'Apple',
+            price: 206000,
+            configuration: { cpu: 'A14 Bionic', gpu: 'Apple GPU' },
+          },
+          {
+            model: 'Galaxy S23',
+            company: 'Samsung',
+            price: 90000,
+            configuration: { cpu: 'Exynos', gpu: 'Mali' },
+          },
+          {
+            model: 'Note 5',
+            company: 'Xiomi',
+            price: 20000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Adreno' },
+          },
+          {
+            model: 'One Plus 8',
+            company: 'One Plus',
+            price: 60000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Mali' },
+          },
+          {
+            model: 'Z40',
+            company: 'BlackBerry',
+            price: 40000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Adreno' },
+          },
+        ]
+
+        // find the list of affordable phones
+        // affordable => price < 50000
+        console.log(
+          mobiles.filter((mobile) => {
+            return mobile.price < 50000
+          })
+        )
+
+        // find the list of phones using Snapdragon processor
+        console.log(
+          mobiles.filter((mobile) => {
+            return mobile.configuration.cpu == 'Snapdragon'
+          })
+        )
+      }
+
+      function5()
+    </script>
+  </body>
+</html>

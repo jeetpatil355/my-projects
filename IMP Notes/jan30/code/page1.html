@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page1</title>
+  </head>
+  <body>
+    <h1>Set Demo</h1>
+
+    <script>
+      // collection of numbers
+      const numbers = [
+        10, 20, 30, 40, 50, 10, 20, 30, 40, 50, 10, 20, 30, 40, 50,
+      ]
+      // const numbers = new Array([
+      //  10, 20, 30, 40, 50, 10, 20, 30, 40, 50, 10, 20, 30, 40, 50,
+      // ])
+      console.log(numbers)
+      console.log(`length of numbers: ${numbers.length}`)
+
+      console.log('-')
+
+      // set of numbers
+      const set = new Set(numbers)
+      console.log(set)
+
+      // add a new value
+      set.add(60)
+      set.add(70)
+      set.add(80)
+      set.add(80)
+      set.add(80)
+      set.add(80)
+      set.add(80)
+      console.log(set)
+      console.log(`length of set: ${set.size}`)
+
+      // check if a value is present in the set
+      console.log(`does set contain 100: ${set.has(100)}`)
+      console.log(`does set contain 80: ${set.has(80)}`)
+
+      // delete a value from set
+      set.delete(80)
+      console.log(set)
+
+      // get all values
+      console.log(`values present in the set: `, set.values())
+
+      // delete all values from set
+      set.clear()
+      console.log(set)
+
+      // for (const value of set) {
+      //   console.log(value)
+      // }
+    </script>
+  </body>
+</html>

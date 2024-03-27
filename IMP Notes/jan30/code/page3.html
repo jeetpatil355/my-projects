@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page3</title>
+  </head>
+  <body>
+    <h1>Multi-dimensional collection</h1>
+    <script>
+      // two dimensional collection (3x2)
+      // collection of collections
+      // array of arrays
+      const numbers = [
+        [10, 20],
+        [30, 40],
+        [50, 60],
+      ]
+      console.log(numbers)
+
+      // get the values from array
+      console.log(`value at 0, 0 = ${numbers[0][0]}`)
+      console.log(`value at 2, 1 = ${numbers[2][1]}`)
+
+      // get all the values
+      for (const row of numbers) {
+        for (const value of row) {
+          console.log(value)
+        }
+        console.log('-')
+      }
+
+      // create a three dimensional array (3x3x3) with values
+      // 10, 20, 30, ...
+      const array = [
+        [
+          [10, 20, 30],
+          [40, 50, 60],
+          [70, 80, 90],
+        ],
+        [
+          [100, 110, 120],
+          [130, 140, 150],
+          [160, 170, 180],
+        ],
+        [
+          [190, 200, 210],
+          [220, 230, 240],
+          [250, 260, 270],
+        ],
+      ]
+      console.log(array)
+      console.log(`value at 0, 0, 0 = ${array[0][0][0]}`)
+      console.log(`value at 2, 2, 2 = ${array[2][2][2]}`)
+
+      for (const outerRow of array) {
+        for (const row of outerRow) {
+          for (const value of row) {
+            console.log(value)
+          }
+          console.log('-')
+        }
+        console.log('--')
+      }
+    </script>
+  </body>
+</html>

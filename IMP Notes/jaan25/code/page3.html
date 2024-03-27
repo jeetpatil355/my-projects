@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page3</title>
+
+    <style>
+      p {
+        color: white;
+        background-color: red;
+      }
+
+      div.type1 p {
+        background-color: blue;
+      }
+
+      div.type2 p {
+        background-color: orange;
+      }
+
+      ul li p {
+        background-color: green;
+      }
+
+      table thead tr {
+        background-color: green;
+        color: white;
+      }
+
+      table tbody tr {
+        background-color: orange;
+        color: white;
+      }
+
+      table tfoot tr {
+        background-color: brown;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Descendent Selector Demo</h1>
+
+    <!-- color: white, background color: red -->
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3 (outside div)</p>
+
+    <div class="type1">
+      <!-- color: white, background color: blue -->
+      <p>paragraph 3</p>
+      <p>paragraph 4</p>
+      <p>paragraph 5 (inside div)</p>
+
+      <span>span inside div</span>
+    </div>
+
+    <div class="type2">
+      <!-- color: white, background color: orange -->
+      <p>paragraph 3</p>
+      <p>paragraph 4</p>
+      <p>paragraph 5 (inside div)</p>
+
+      <span>span inside div</span>
+    </div>
+
+    <div class="type1">
+      <!-- color: white, background color: blue -->
+      <p>paragraph 3</p>
+      <p>paragraph 4</p>
+      <p>paragraph 5 (inside div)</p>
+
+      <span>span inside div</span>
+    </div>
+
+    <div class="type2">
+      <!-- color: white, background color: orange -->
+      <p>paragraph 3</p>
+      <p>paragraph 4</p>
+      <p>paragraph 5 (inside div)</p>
+
+      <span>span inside div</span>
+    </div>
+
+    <ul>
+      <!-- color: white, background color: green -->
+      <li><p>paragraph 5</p></li>
+      <li><p>paragraph 6</p></li>
+      <li><p>paragraph 6</p></li>
+      <li><p>paragraph 6</p></li>
+      <li><p>paragraph 6</p></li>
+      <li><p>paragraph 6</p></li>
+    </ul>
+    <hr />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>no</th>
+          <th>item name</th>
+          <th>price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>item 1</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>item 1</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>item 1</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total</th>
+          <th>300</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

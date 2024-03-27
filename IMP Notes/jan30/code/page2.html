@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Map Demo</h1>
+
+    <script>
+      // map of values
+      const map = new Map([
+        ['name', 'steve'],
+        ['address', 'usa'],
+      ])
+      console.log(map)
+
+      // get the size of map
+      console.log(`size of map : ${map.size}`)
+
+      // get the collection of keys
+      console.log(`keys = `, map.keys())
+
+      // get the collection of values
+      console.log(`values = `, map.values())
+
+      // check if name is available in map
+      console.log(`does map contain name: ${map.has('name')}`)
+      console.log(`does map contain phone: ${map.has('phone')}`)
+
+      // delete an entry using key
+      map.delete('name')
+      console.log(map)
+
+      // delete all the entries
+      map.clear()
+      console.log(map)
+    </script>
+  </body>
+</html>

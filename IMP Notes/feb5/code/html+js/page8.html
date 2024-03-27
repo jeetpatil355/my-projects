@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page8</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>jQuery Demo</h1>
+
+      <div class="box"></div>
+      <hr />
+      <button onclick="slideUpBox()">Slide Up</button>
+      <button onclick="slideDownBox()">Slide Down</button>
+      <button onclick="slideToggleBox()">Slide Toggle</button>
+
+      <hr />
+      <button onclick="fadeInBox()">Fade In</button>
+      <button onclick="fadeOutBox()">Fade Out</button>
+      <button onclick="fadeToggleBox()">Fade Toggle</button>
+      <hr />
+      <button onclick="onCustomAnimation()">custom animate</button>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+      function slideUpBox() {
+        $('.box').slideUp()
+      }
+
+      function slideDownBox() {
+        $('.box').slideDown()
+      }
+
+      function slideToggleBox() {
+        $('.box').slideToggle()
+      }
+
+      function fadeInBox() {
+        $('.box').fadeIn()
+      }
+
+      function fadeOutBox() {
+        $('.box').fadeOut()
+      }
+
+      function fadeToggleBox() {
+        $('.box').fadeToggle()
+      }
+
+      function onCustomAnimation() {
+        $('.box')
+          .animate({
+            width: '150px',
+            height: '150px',
+          })
+          .animate({ width: '100px', height: '100px' })
+      }
+    </script>
+  </body>
+</html>

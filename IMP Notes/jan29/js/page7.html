@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page7</title>
+  </head>
+  <body>
+    <h1>Array Demo</h1>
+    <h2>Looping the array</h2>
+
+    <script>
+      // collection of numbers
+      const numbers = [10, 20, 30, 40, 50]
+
+      // using traditional for loop
+      // - accessing the values using their index positions
+      for (let index = 0; index < numbers.length; index++) {
+        console.log(`value at ${index} = ${numbers[index]}`)
+      }
+
+      console.log('-')
+
+      // using traditional for..in loop
+      // - accessing the values using their index positions
+      for (const index in numbers) {
+        console.log(`value at ${index} = ${numbers[index]}`)
+      }
+
+      console.log('-')
+
+      // using for..of loop
+      // - accessing values directly (without using their index positions)
+      for (const value of numbers) {
+        console.log(`value = ${value}`)
+      }
+    </script>
+  </body>
+</html>

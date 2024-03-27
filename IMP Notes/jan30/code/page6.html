@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page7</title>
+  </head>
+  <body>
+    <h1>Function Reference</h1>
+
+    <script>
+      function function1() {
+        // number
+        let num1 = 100
+        console.log(`num1 = ${num1}, type = ${typeof num1}`)
+
+        // number
+        const num2 = num1
+        console.log(`num2 = ${num2}, type = ${typeof num2}`)
+
+        num1 = 200
+        console.log(`num1 = ${num1}, type = ${typeof num1}`)
+        console.log(`num2 = ${num2}, type = ${typeof num2}`)
+      }
+
+      // function1()
+
+      // named function
+      function function2() {
+        console.log('inside function2')
+      }
+
+      function2()
+
+      // console.log(`function2 = `, function2)
+      // console.log(`type of function2 = ${typeof function2}`)
+
+      // call function2 and capture the returned value in myFunction2
+      // since function2 is not returning anything explicitly, the myFunction2 will
+      // get value undefined
+      // const myFunction2 = function2()
+
+      // function reference
+      // function alias: second name to an existing function
+      const myFunction2 = function2
+      myFunction2()
+
+      // function reference
+      const myFunction3 = myFunction2
+      myFunction3()
+    </script>
+  </body>
+</html>

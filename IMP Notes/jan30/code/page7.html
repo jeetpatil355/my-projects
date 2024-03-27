@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page7</title>
+  </head>
+  <body>
+    <h1>Function reference demo</h1>
+    <script>
+      function function1(param) {
+        console.log('inside function1')
+        console.log(`param = ${param}, type = ${typeof param}`)
+
+        // since param will have reference to a function
+        param()
+      }
+
+      // number
+      // param = 100
+      // function1(100)
+
+      // string
+      // param = 'test'
+      // function1('test')
+
+      // boolean
+      // param = true
+      // function1(true)
+
+      function function2() {
+        console.log('inside function2')
+      }
+
+      // function
+      // param = function2
+      // function1(function2)
+
+      // named function
+      function add(p1, p2) {
+        console.log(`${p1} + ${p2} = ${p1 + p2}`)
+      }
+
+      // anonymous function using function keyword
+      const subtract = function (p1, p2) {
+        console.log(`${p1} - ${p2} = ${p1 - p2}`)
+      }
+
+      // arrow function
+      const divide = (p1, p2) => {
+        console.log(`${p1} / ${p2} = ${p1 / p2}`)
+      }
+
+      function performOperation(func) {
+        func(10, 20)
+        func(20, 30)
+        func(30, 40)
+        func(40, 50)
+        func(50, 60)
+        func(60, 70)
+      }
+
+      performOperation(add)
+      performOperation(subtract)
+      performOperation(divide)
+
+      performOperation((p1, p2) => {
+        console.log(`${p1} * ${p2} = ${p1 * p2}`)
+      })
+    </script>
+  </body>
+</html>

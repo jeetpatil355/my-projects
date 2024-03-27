@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page6</title>
+  </head>
+  <body>
+    <h1>HTML + JS Demo</h1>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+
+    <button onclick="renderValue()">show number</button>
+
+    <hr />
+
+    <div>
+      <label for="">New Value</label>
+      <input type="number" id="number" />
+    </div>
+    <button onclick="changeValue()">change the value</button>
+
+    <script>
+      let number = 100
+
+      function changeValue() {
+        // update the number's value
+        number = document.getElementById('number').value
+
+        // render the value in all 5 divs
+        renderValue()
+      }
+
+      function renderValue() {
+        const div1 = document.getElementById('div1')
+        const div2 = document.getElementById('div2')
+        const div3 = document.getElementById('div3')
+        const div4 = document.getElementById('div4')
+        const div5 = document.getElementById('div5')
+
+        div1.innerText = number
+        div2.innerText = number
+        div3.innerText = number
+        div4.innerText = number
+        div5.innerText = number
+      }
+    </script>
+  </body>
+</html>

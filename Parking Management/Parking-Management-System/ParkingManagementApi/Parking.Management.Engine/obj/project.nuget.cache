@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "SVMCYXMOO8mxzIxwhoUHiIZtlpcKOcflsdbvzWvU8B3HUns+veEb94NB8fY37vMhBxeTbbG7F+2SZvrzG9fLAw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jitendra.patil\\Desktop\\Parking Management\\Parking-Management-System\\ParkingManagementApi\\Parking.Management.Engine\\Parking.Management.Engine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jitendra.patil\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\jitendra.patil\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\jitendra.patil\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\jitendra.patil\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
+    "C:\\Users\\jitendra.patil\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page2</title>
+  </head>
+  <body>
+    <h1>JSON Array Demo</h1>
+    <script>
+      function function1() {
+        // array of numbers using json notation
+        const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        const squares = array.map((value) => {
+          // transforming the number
+          return value ** 2
+        })
+
+        console.log(array)
+        console.log(squares)
+      }
+
+      // function1()
+
+      function function2() {
+        // array of objects json notation
+        const persons = [
+          { name: 'person1', address: 'pune', phone: '+91324322', age: 20 },
+          { name: 'person2', address: 'mumbai', phone: '+91324323', age: 21 },
+          { name: 'person3', address: 'satara', phone: '+91324324', age: 22 },
+          { name: 'person4', address: 'karad', phone: '+91324325', age: 24 },
+        ]
+
+        // get every person's name and address
+        const result1 = []
+        for (const person of persons) {
+          // transforming the object
+          result1.push({
+            name: person.name,
+            address: person['address'],
+          })
+        }
+        console.log(result1)
+
+        // get every person's address and name using map
+        const result2 = persons.map((person) => {
+          // transformation logic
+          return { name: person.name, address: person.address }
+        })
+        console.log(result2)
+      }
+
+      // function2()
+
+      function function3() {
+        // array of 5 mobile with model, company, price and configuration (cpu, gpu) properties
+        const mobiles = [
+          {
+            model: 'iPhone 13 pro max',
+            company: 'Apple',
+            price: 206000,
+            configuration: { cpu: 'A14 Bionic', gpu: 'Apple GPU' },
+          },
+          {
+            model: 'Galaxy S23',
+            company: 'Samsung',
+            price: 90000,
+            configuration: { cpu: 'Exynos', gpu: 'Mali' },
+          },
+          {
+            model: 'Note 5',
+            company: 'Xiomi',
+            price: 20000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Adreno' },
+          },
+          {
+            model: 'One Plus 8',
+            company: 'One Plus',
+            price: 60000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Mali' },
+          },
+          {
+            model: 'Z40',
+            company: 'BlackBerry',
+            price: 40000,
+            configuration: { cpu: 'Snapdragon', gpu: 'Adreno' },
+          },
+        ]
+
+        // create a new collection using every phone's model and company
+        console.log(
+          mobiles.map((mobile) => {
+            return { model: mobile.model, company: mobile.company }
+          })
+        )
+
+        // generate a report containing model and its price
+        console.log(
+          mobiles.map((mobile) => {
+            return { model: mobile.model, price: mobile.price }
+          })
+        )
+
+        // generate a report which shows model, price and cpu of every phone
+        console.log(
+          mobiles.map((mobile) => {
+            return {
+              model: mobile.model,
+              price: mobile.price,
+              cpu: mobile.configuration.cpu,
+            }
+          })
+        )
+      }
+
+      // function3()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* desktop */
+      @media (width > 1124px) {
+        body {
+          background-color: red;
+        }
+
+        div.menu {
+          display: block;
+        }
+
+        div.menu-mobile {
+          display: none;
+        }
+      }
+
+      /* tablet */
+      @media (width <= 1124px) {
+        body {
+          background-color: green;
+        }
+
+        div.menu {
+          display: block;
+        }
+
+        div.menu-mobile {
+          display: none;
+        }
+      }
+
+      /* mobile */
+      @media (width <= 768px) {
+        body {
+          background-color: blue;
+        }
+
+        div.menu {
+          display: none;
+        }
+
+        div.menu-mobile {
+          display: block;
+        }
+      }
+
+      h1 {
+        color: white;
+      }
+
+      div.menu {
+        height: 100px;
+        background-color: darkgray;
+      }
+
+      div.menu-mobile {
+        height: 100px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Query demo</h1>
+    <div class="menu"></div>
+    <div class="menu-mobile"></div>
+  </body>
+</html>

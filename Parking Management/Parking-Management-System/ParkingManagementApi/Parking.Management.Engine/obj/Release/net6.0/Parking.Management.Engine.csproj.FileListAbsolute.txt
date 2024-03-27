@@ -1,0 +1,12 @@
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\bin\Release\net6.0\Parking.Management.Engine.deps.json
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\bin\Release\net6.0\Parking.Management.Engine.dll
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\bin\Release\net6.0\Parking.Management.Engine.pdb
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\Parking.Management.Engine.csproj.AssemblyReference.cache
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\Parking.Management.Engine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\Parking.Management.Engine.AssemblyInfoInputs.cache
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\Parking.Management.Engine.AssemblyInfo.cs
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\Parking.Management.Engine.csproj.CoreCompileInputs.cache
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\Parking.Management.Engine.dll
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\refint\Parking.Management.Engine.dll
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\Parking.Management.Engine.pdb
+C:\Users\jitendra.patil\Desktop\Parking Management\Parking-Management-System\ParkingManagementApi\Parking.Management.Engine\obj\Release\net6.0\ref\Parking.Management.Engine.dll

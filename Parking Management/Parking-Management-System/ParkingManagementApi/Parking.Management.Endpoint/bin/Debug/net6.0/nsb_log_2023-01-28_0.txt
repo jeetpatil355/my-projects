@@ -1,0 +1,360 @@
+﻿2023-01-28 20:08:12.550 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-28 20:08:12.736 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-28 20:08:12.741 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-28 20:08:12.746 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-28 20:10:48.384 ERROR Your license has expired
+2023-01-28 20:10:51.899 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.MutateIncomingMessageBehavior.InvokeIncomingMessageMutators(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateInstanceMessage/MutateIncomingMessageBehavior.cs:line 60
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 40
+   at NServiceBus.UnitOfWorkBehavior.InvokeUnitsOfWork(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/UnitOfWork/UnitOfWorkBehavior.cs:line 62
+   at NServiceBus.MutateIncomingTransportMessageBehavior.InvokeIncomingTransportMessagesMutators(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/MessageMutators/MutateTransportMessage/MutateIncomingTransportMessageBehavior.cs:line 59
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: 31fee61a-6811-4e76-a612-5aa7026a10ee
+2023-01-28 20:10:55.312 ERROR Your license has expired
+2023-01-28 20:10:55.342 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: 31fee61a-6811-4e76-a612-5aa7026a10ee
+2023-01-28 20:10:55.414 ERROR Your license has expired
+2023-01-28 20:10:55.422 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: 31fee61a-6811-4e76-a612-5aa7026a10ee
+2023-01-28 20:10:55.532 ERROR Your license has expired
+2023-01-28 20:10:55.543 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: 31fee61a-6811-4e76-a612-5aa7026a10ee
+2023-01-28 20:10:55.597 ERROR Your license has expired
+2023-01-28 20:10:55.603 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: 31fee61a-6811-4e76-a612-5aa7026a10ee
+2023-01-28 20:10:55.674 ERROR Your license has expired
+2023-01-28 20:10:57.434 WARN  Delayed Retry will reschedule message '4fa6cef4-6a17-460c-9964-af9800f1e236' after a delay of 00:00:10 because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: 31fee61a-6811-4e76-a612-5aa7026a10ee
+2023-01-28 20:11:08.256 ERROR Your license has expired
+2023-01-28 20:11:08.263 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: 9c84a940-0cee-46eb-bf95-cb914fe0392d
+2023-01-28 20:11:29.276 ERROR Your license has expired
+2023-01-28 20:11:29.287 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: a2f0fe45-fcb6-41cf-8271-5b54119b8c63
+2023-01-28 20:11:43.575 ERROR Your license has expired
+2023-01-28 20:11:43.580 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: a2f0fe45-fcb6-41cf-8271-5b54119b8c63
+2023-01-28 20:11:43.604 ERROR Your license has expired
+2023-01-28 20:11:43.610 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: a2f0fe45-fcb6-41cf-8271-5b54119b8c63
+2023-01-28 20:12:14.713 ERROR Your license has expired
+2023-01-28 20:12:14.730 INFO  Immediate Retry is going to retry message '4fa6cef4-6a17-460c-9964-af9800f1e236' because of an exception:
+System.InvalidOperationException: Unable to resolve type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler, service name: 
+ ---> System.InvalidOperationException: Unresolved dependency [Target Type: Parking.Management.Endpoint.Handlers.AssignParkingSlotCommandHandler], [Parameter: emailService(Parking.Management.Engine.Services.EmailService)], [Requested dependency: ServiceType:Parking.Management.Engine.Services.EmailService, ServiceName:]
+   at LightInject.ServiceContainer.GetEmitMethodForDependency(Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3443
+   at LightInject.ServiceContainer.EmitConstructorDependency(IEmitter emitter, Dependency dependency) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3402
+   at LightInject.ServiceContainer.EmitConstructorDependencies(ConstructionInfo constructionInfo, IEmitter emitter, Action`1 decoratorTargetEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3368
+   at LightInject.ServiceContainer.EmitNewInstanceUsingImplementingType(IEmitter emitter, ConstructionInfo constructionInfo, Action`1 decoratorTargetEmitMethod) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3328
+   at LightInject.ServiceContainer.EmitNewInstance(ServiceRegistration serviceRegistration, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3282
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.EmitLifetime(ServiceRegistration serviceRegistration, Action`1 emitMethod, IEmitter emitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3849
+   at LightInject.ServiceContainer.<>c__DisplayClass139_0.<CreateEmitMethodWrapper>b__0(IEmitter ms) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3109
+   at LightInject.ServiceContainer.CreateDynamicMethodDelegate(Action`1 serviceEmitter) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3027
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3915
+   --- End of inner exception stack trace ---
+   at LightInject.ServiceContainer.CreateDelegate(Type serviceType, String serviceName, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3920
+   at LightInject.ServiceContainer.CreateDefaultDelegate(Type serviceType, Boolean throwError) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 3878
+   at LightInject.ServiceContainer.GetInstance(Type serviceType) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 2740
+   at LightInject.Scope.WithThisScope[T](Func`1 function) in /_/src/NServiceBus.Core/ObjectBuilder/LightInject/LightInject.g.cs:line 6220
+   at NServiceBus.LoadHandlersConnector.Invoke(IIncomingLogicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/LoadHandlersConnector.cs:line 39
+   at NServiceBus.ScheduledTaskHandlingBehavior.Invoke(IIncomingLogicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Scheduling/ScheduledTaskHandlingBehavior.cs:line 22
+   at NServiceBus.DeserializeMessageConnector.Invoke(IIncomingPhysicalMessageContext context, Func`2 stage) in /_/src/NServiceBus.Core/Pipeline/Incoming/DeserializeMessageConnector.cs:line 34
+   at NServiceBus.ProcessingStatisticsBehavior.Invoke(IIncomingPhysicalMessageContext context, Func`2 next) in /_/src/NServiceBus.Core/Performance/Statistics/ProcessingStatisticsBehavior.cs:line 25
+   at NServiceBus.TransportReceiveToPhysicalMessageConnector.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/Pipeline/Incoming/TransportReceiveToPhysicalMessageConnector.cs:line 37
+   at NServiceBus.RetryAcknowledgementBehavior.Invoke(ITransportReceiveContext context, Func`2 next) in /_/src/NServiceBus.Core/ServicePlatform/Retries/RetryAcknowledgementBehavior.cs:line 25
+   at NServiceBus.MainPipelineExecutor.Invoke(MessageContext messageContext) in /_/src/NServiceBus.Core/Pipeline/MainPipelineExecutor.cs:line 35
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 58
+   at NServiceBus.TransportReceiver.InvokePipeline(MessageContext c) in /_/src/NServiceBus.Core/Transports/TransportReceiver.cs:line 64
+   at NServiceBus.LearningTransportMessagePump.ProcessFile(ILearningTransportTransaction transaction, String messageId) in /_/src/NServiceBus.Core/Transports/Learning/LearningTransportMessagePump.cs:line 279
+Exception details:
+	Message ID: 4fa6cef4-6a17-460c-9964-af9800f1e236
+	Transport message ID: 9f44a76f-f145-4a5d-ac0f-fdc8c718ba29

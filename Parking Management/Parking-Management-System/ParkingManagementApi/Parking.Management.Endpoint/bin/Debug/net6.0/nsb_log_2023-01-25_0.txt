@@ -1,0 +1,60 @@
+﻿2023-01-25 13:27:24.407 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 13:27:24.584 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 13:27:24.593 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 13:27:24.598 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 13:43:17.580 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 13:43:17.797 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 13:43:17.806 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 13:43:17.810 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 14:50:11.622 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 14:50:11.767 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 14:50:11.778 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 14:50:11.782 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 15:05:13.105 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 15:05:13.322 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 15:05:13.331 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 15:05:13.337 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 15:15:15.826 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 15:15:15.973 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 15:15:15.983 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 15:15:15.987 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 15:32:49.082 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 15:32:49.538 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 15:32:49.556 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 15:32:49.567 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 15:55:58.972 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 15:55:59.124 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 15:55:59.133 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 15:55:59.138 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 16:15:10.921 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 16:15:11.118 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 16:15:11.125 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 16:15:11.135 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 16:18:51.081 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 16:18:51.323 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 16:18:51.334 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 16:18:51.341 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 16:55:38.836 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 16:55:39.043 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 16:55:39.054 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 16:55:39.062 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 17:14:59.226 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 17:14:59.421 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 17:14:59.430 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 17:14:59.435 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 17:25:08.808 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 17:25:09.329 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 17:25:09.347 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 17:25:09.355 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 17:52:21.335 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 17:52:21.506 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 17:52:21.515 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 17:52:21.520 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 19:17:49.916 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 19:17:50.080 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 19:17:50.090 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 19:17:50.095 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 20:13:15.337 INFO  Logging to 'C:\Users\jitendra.patil\Desktop\C# .NET\ParkingManagementApi\Parking.Management.Endpoint\bin\Debug\net6.0\' with level Info
+2023-01-25 20:13:15.529 INFO  No valid license could be found. Falling back to trial license with start date '2022-12-16'.
+2023-01-25 20:13:15.541 ERROR Trial license expired. Get your free development license at https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
+2023-01-25 20:13:15.547 WARN  Opening browser to: https://particular.net/license/nservicebus?v=7.8.2&t=0&p=windows
